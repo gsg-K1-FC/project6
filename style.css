@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-    width: 25%;
+    width: 30%;
    
 }
 
@@ -27,12 +27,19 @@ nav ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+   
     
 }
 nav ul li{
     color:white ;
     font-size: 13px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:white ;
 }
 .logo-container {
     width: 119px;
@@ -50,27 +57,56 @@ nav ul li{
     display: flex;
     position: relative;
     justify-content: space-around;
+    width: 100%;
 }
 
 .meeting-img  {
     display: flex;
-    margin-top: 350px;
+    margin-top: 250px;
     margin-left: 300px;
     width: 600px;
     height: 420px;
-
+   
 }
 
 .content {
   
     position: absolute;
-    margin-top: 400px;
-    margin-right: 600px;
-   font-family: 'Open Sans', sans-serif;
+    margin-top: 300px;
+    margin-left: 300px;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
 
+}
+.icon .fa-bars {
+    display: none;
+}
+
+@media (max-width: 600px){
+  
+ 
+    .landing-container {
+display: flex;
+flex-direction: column-reverse;
+
+}
+.icon .fa-bars {
+    display:block;
+    color: white;
+}
+
+nav {
+    display: none;
+}
+.content {
+    margin-top: 900px;
+    margin-left: 500px;
 }
 
 
+
+
+}
 
     .content span {
         display: block;
@@ -107,7 +143,7 @@ nav ul li{
     font-size: 12px;
     text-decoration: none;
     margin-top: 20px;
-    padding: 22px 42px;
+
     font-weight: bold;
 
         }
@@ -116,3 +152,5 @@ nav ul li{
             color: #00bfd8;
             cursor: pointer;
           }
+
+  
