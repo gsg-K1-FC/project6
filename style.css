@@ -5,7 +5,7 @@
 
 }
 
-header {
+.head {
     display: flex;
     justify-content: space-around;
     background-color: #00BFD8;
@@ -83,12 +83,14 @@ nav ul li a {
 }
 
 @media (max-width: 600px){
-  
+ .head {
+     width: 100%;
+ }
  
     .landing-container {
 display: flex;
-flex-direction: column-reverse;
-
+flex-direction: column;
+width: 100%;
 }
 .icon .fa-bars {
     display:block;
@@ -98,7 +100,12 @@ flex-direction: column-reverse;
 nav {
     display: none;
 }
-.content {
+.content{
+    margin-top: 150px;
+    margin-left: 600px;
+    text-align: center;
+}
+.meeting-img {
     margin-top: 900px;
     margin-left: 500px;
 }
