@@ -806,8 +806,6 @@ font-weight:bold;
 
     .row-contact{
         display: flex;
-        flex-direction: column;
-        margin: 100px;
     }
 
     .team-member{
@@ -877,7 +875,16 @@ font-weight:bold;
    margin-top:15%;
    
    }
-   }‏
+
+   .row-contact{
+    flex-direction: column;
+    margin: 100px;
+    }
+
+    .col-form{
+        margin-top: 40px;
+    }
+}‏
 
 @media (max-width: 1600px)
 {
