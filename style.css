@@ -19,7 +19,7 @@
 }
 
 nav {
-    width: 80%;
+    width: 70%;
    
 }
 
@@ -27,7 +27,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     justify-content: center;   
-    
+    justify-content: flex-end;
 }
 nav ul li{
     color:white ;
@@ -54,15 +54,15 @@ nav ul li a {
  
 .landing-container {
     display: flex;
-    position: relative;
-    justify-content: space-around;
+        justify-content: center;
     width: 100%;
+    margin-top: 5%;
 }
 
 .meeting-img  {
     display: flex;
-    margin-top: 250px;
-    margin-left: 300px;
+    margin-top:10%;
+    margin-left: 10%;
     width: 600px;
     height: 420px;
    
@@ -70,11 +70,10 @@ nav ul li a {
 
 .content {
   
-    position: absolute;
-    top: 50%;
-    left: 10%;
+    /* position: absolute; */
+   margin-top:15%;
     font-family: 'Raleway', sans-serif;
-    width: 50%;
+    width: 20%;
 
 }
 .icon .fa-bars {
@@ -150,9 +149,7 @@ nav ul li a {
            }
            .content{
                text-align: center;
-               position: static;
-               margin-top: 40%;
-           margin-left: 40%;
+              
            }
            .meeting-img {
                position: static;
@@ -172,5 +169,38 @@ nav ul li a {
 .meeting-img {
     right: 50%;
 }
+
+     }
+     @media (max-width: 600px) {
+        .head {
+            width: 100%;
+        }
+        
+        .landing-container {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       align-items: center;
+       }
+       .icon .fa-bars {
+           display:block;
+           color: white;
+       }
+       
+       nav {
+           display: none;
+       }
+       .content{
+           text-align: center;
+          
+       }
+       .meeting-img {
+           position: static;
+       width: 50%;
+       margin-top: 40%;
+       
+       }
+       
+
 
      }
