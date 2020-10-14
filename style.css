@@ -395,6 +395,14 @@ footer{
     padding-bottom: 8px;
 }
 
+.col-footer-outer{
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+}
+
 .col-footer-inner{
     margin-bottom: 36px;
 }
@@ -513,7 +521,7 @@ footer .fa-stack{
 
     .col-footer-outer{
         max-width: 100%;
-        flex: 0 0 100%
+        flex: 0 0 100%;
     }
 }
 
