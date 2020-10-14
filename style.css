@@ -56,4 +56,10 @@
     .container{
         margin-bottom: 40px;
     }
+    .description{
+        display: block;
+        text-align: center;
+        width: 330px;
+        padding-left: 15px;
+    }
 }
