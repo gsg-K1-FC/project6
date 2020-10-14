@@ -1,16 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-div{
-    display: block;
-}
-
-/* Section1: Design And Plan Your Business Growth Steps */
-.services1{
-    padding-top: 26px;
-    padding-bottom: 60px;
+    box-sizing: border-box;
 }
 
 body, p{
@@ -24,6 +15,192 @@ body, p{
 p{
     margin-bottom: 16px;
 }
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00BFD8;
+    padding: 15px 0;    
+    position: fixed;
+    top: 0 ;
+    width: 100%;
+    z-index: 1;
+    height: 48px;
+  
+}
+
+nav {
+    width: 70%;
+   
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;   
+    justify-content: flex-end;
+}
+nav ul li{
+    color:white ;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:white ;
+}
+.logo-container {
+    width: 119px;
+    height: 42px;
+}
+.logo-container p {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    color:white ;
+ 
+}
+ 
+.landing-container {
+    display: flex;
+        justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.meeting-img  {
+    display: flex;
+    margin-top:10%;
+    margin-left: 10%;
+    width: 600px;
+    height: 420px;
+   
+}
+
+.content {
+  
+   
+   margin-top:15%;
+    font-family: 'Raleway', sans-serif;
+    width: 30%;
+
+}
+.icon .fa-bars {
+    display: none;
+}
+
+
+
+    .content span {
+        display: block;
+        line-height: 60px;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .content span:nth-child(1) {
+        font-size: 40px;
+        
+        color:  #00BFD8;
+        font-weight: bold;
+    }
+    .content span:nth-child(3) {
+    font-size: 16px;
+    color: #626262;
+    line-height:20px;
+    } 
+    
+    
+    .content span:nth-child(2) {
+    font-size: 40px;
+    color: #393939;
+    font-weight: bold;
+    }
+
+   .content .btn {
+    display: inline-block;
+    padding: 22px 24px;
+    border: 2px solid #00bfd8;
+    border-radius: 50px;
+    background-color: #00bfd8;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 20px;
+
+    font-weight: bold;
+
+        }
+        .btn:hover {
+            background-color: white;
+            color: #00bfd8;
+            cursor: pointer;
+          }
+
+.business-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+.header-font{
+    color: #393939;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.font-design
+    {
+    color: #626262;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+    text-align: center;
+}
+.description{
+    display: block;
+    text-align: center;
+    width: 530px;
+    margin-bottom: 70px;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    border: 1px solid #d6d6c2;
+    border-radius: 8px;
+    padding: 50px 30px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.img-service{
+    width: 96px;
+    height: 96px;
+}
+
+/* div{
+    display: block;
+} */
+
+/* Section1: Design And Plan Your Business Growth Steps */
+.services1{
+    padding-top: 26px;
+    padding-bottom: 60px;
+}
+
+
 
 .container2{
     width: 100%;
@@ -172,7 +349,8 @@ h2{
     line-height: 24px;
     width: 55%;
     position: relative;
-    margin-left: 270px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-wrapper{
@@ -463,23 +641,66 @@ footer .fa-stack{
 
 /* Media Queries */
 
-@media (max-width: 590px){
-    .services2 .col1{
-        max-width: 100;
-        flex: 0 0 70%;
+
+@media (max-width: 600px) {
+    .head {
+        width: 100%;
     }
+    
+    .landing-container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   }
+   .icon .fa-bars {
+       display:block;
+       color: white;
+   }
+   .container{
+       width: 300px;
+   }
+   
+   nav {
+       display: none;
+   }
+   .content{
+       text-align: center;
+       width: 80%;
+    
+   }
+   .content span:nth-child(1) {
+    font-size: 35px;
+    font-weight: bolder;
+    color:  #00BFD8;
+    font-weight: bold;
+}
+.content span:nth-child(3) {
+font-size: 20px;
+color: #626262;
+line-height:40px;
+font-weight: bold;
+} 
+
+
+.content span:nth-child(2) {
+font-size: 35px;
+color: #393939;
+font-weight:bold;
 }
 
-@media (max-width: 765px){
-    footer .row{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+   .meeting-img {
+       position: static;
+   width: 50%;
+   margin-top: 30%;
+   
+   }
 
+   .services2 .col1{
+    max-width: 100;
+    flex: 0 0 70%;
+}
+}
 @media (max-width: 768px){
     .services1 .row{
         display: flex;
@@ -523,6 +744,32 @@ footer .fa-stack{
         max-width: 100%;
         flex: 0 0 100%;
     }
+
+    footer .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 800px){
+    .services
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        margin-bottom: 40px;
+    }
+    .description{
+        display: block;
+        text-align: center;
+        width: 330px;
+        padding-left: 15px;
+    }
 }
 
 @media (min-width: 992px){
@@ -545,28 +792,22 @@ footer .fa-stack{
     }
 }
 
-@media (max-width: 1190px){
-    .row-contact{
-        display: flex;
-        flex-direction: column;
-        margin: 100px;
+
+@media (min-width: 1200px){
+    
+    .container2{
+        max-width: 1200px;
     }
 
-    #contact-form{
-        margin-top: 50px;
-    }
-}
-
-@media (max-width: 1199px){
     .p-about{
         margin-right: auto;
         margin-left: auto;
     }
-}
 
-@media (min-width: 1200px){
-    .container2{
-        max-width: 1200px;
+    .row-contact{
+        display: flex;
+        flex-direction: column;
+        margin: 100px;
     }
 
     .team-member{
@@ -605,3 +846,47 @@ footer .fa-stack{
         margin-left: auto;
     }
 } 
+
+
+@media (max-width: 1200px){
+    .head {
+        width: 100%;
+    }
+    
+    .landing-container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   }
+   .icon .fa-bars {
+       display:block;
+       color: white;
+   }
+   
+   nav {
+       display: none;
+   }
+   .content{
+       text-align: center;
+       width: 50%;
+   }
+   .meeting-img {
+       position: static;
+   
+   margin-top:15%;
+   
+   }
+   }‏
+
+@media (max-width: 1600px)
+{
+
+    .content{
+    left: 2%;
+    }
+    .meeting-img {
+    right: 50%;
+    }
+
+}
